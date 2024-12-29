@@ -13,6 +13,11 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    screens:{
+      ...require("tailwindcss/defaultTheme").screens,
+      "2xl":"1329px",
+      "2lg": "1126px",
+    }
   },
   plugins: [],
 };
