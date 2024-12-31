@@ -1,29 +1,29 @@
-"use client";
-
 import Image from "next/image";
-import back from "../../assets/flash2.png";
-import next from "../../assets/next.png";
-import options from "../../assets/options.png";
-
-import btn1 from "../../assets/btn1.png";
-import btn2 from "../../assets/btn2.png";
+import { btn1, btn2, flash2 as back, next, options } from "@/constants";
 import Link from "next/link";
 import Questions from "@/components/questions/Questions";
 import Title from "@/components/title/Title";
 
 const Flash = () => {
   return (
-    <div className=" min-h-screen pb-[200px]">
-      <Image
-        src={back}
-        alt="background pattern"
-        className="fixed top-0 left-0 w-screen h-screen object-cover"
-        style={{ zIndex: -1 }}
-      />
+    <div className="min-h-screen relative">
+      <div
+        className="fixed top-0 left-0 w-screen h-screen bg-cover bg-center"
+        style={{
+          backgroundImage: `url('${back}')`,
+          zIndex: -1,
+        }}
+      ></div>
       <div>
         <div>
           <button className="absolute md:top-[47px] md:right-[59px] md:hidden top-[30px] left-[14px]">
-            <Image src={options} alt="option button" className="w-[36px]" />
+            <Image
+              src={options}
+              width={36}
+              height={36}
+              alt="option button"
+              className="w-[36px]"
+            />
           </button>
           <Link
             href={"/flash3"}
@@ -31,6 +31,8 @@ const Flash = () => {
           >
             <Image
               src={next}
+              width={52}
+              height={52}
               alt="next button"
               className="md:w-[52px] w-[36px]"
             />
@@ -41,9 +43,9 @@ const Flash = () => {
           Learning New Things
         </p>
         <Questions />
-        <div className="flex justify-center gap-[21px] mt-[37px]">
-          <Image src={btn1} alt="Know button" />
-          <Image src={btn2} alt="Learn button" />
+        <div className="flex justify-center gap-[21px] mt-[37px] mb-[50px]">
+          <Image src={btn1} alt="Know button" width={129} height={59} />
+          <Image src={btn2} alt="Learn button" width={129} height={59} />
         </div>
       </div>
     </div>

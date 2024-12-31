@@ -1,6 +1,5 @@
-import React from "react";
 import Image from "next/image";
-import back from "../../assets/backgb.png";
+import { backgbLogin as back } from "@/constants";
 
 const BlurBox = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -8,6 +7,7 @@ const BlurBox = ({ children }: { children: React.ReactNode }) => {
       <Image
         src={back}
         alt="Background Image"
+        fill
         className="absolute w-full h-full object-cover"
         style={{ zIndex: -1 }}
       />

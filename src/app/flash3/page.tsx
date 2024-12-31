@@ -1,19 +1,18 @@
-import Image from "next/image";
-import React from "react";
-import back from "../../assets/backpattern.png";
+import { backpattern as back } from "@/constants";
 import Title from "@/components/title/Title";
 import ButtonPair from "@/components/buttonPair/ButtonPair";
 import Pooper from "@/components/pooper/Pooper";
 
 const Flash = () => {
   return (
-    <div className=" min-h-screen pb-[200px]">
-      <Image
-        src={back}
-        alt="background pattern"
-        className="fixed top-0 left-0 w-screen h-screen object-cover"
-        style={{ zIndex: -1 }}
-      />
+    <div className=" min-h-screen pb-[200px] relative">
+      <div
+        className="fixed top-0 left-0 w-screen h-screen bg-cover bg-center"
+        style={{
+          backgroundImage: `url('${back}')`,
+          zIndex: -1,
+        }}
+      ></div>
       <div>
         <Title />
         <Pooper />

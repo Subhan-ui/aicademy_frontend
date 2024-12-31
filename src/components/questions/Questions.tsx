@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import arrow from "../../assets/arrow.png";
+import { arrow } from "@/constants";
 
 const questions = [
   { id: 1, question: "What are the colors of the rainbow?" },
@@ -44,11 +44,19 @@ const Questions = () => {
       <div className="md:absolute flex w-full justify-between items-center md:h-[330px] md:mt-0 mt-3 lg:px-[39px] px-[30px]">
         <Image
           src={arrow}
+          width={71}
+          height={71}
           alt="arrow left previous"
           className="rotate-180"
           onClick={goPrev}
         />
-        <Image src={arrow} alt="arrow right next" onClick={goNext} />
+        <Image
+          src={arrow}
+          width={71}
+          height={71}
+          alt="arrow right next"
+          onClick={goNext}
+        />
       </div>
     </div>
   );

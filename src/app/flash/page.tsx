@@ -1,39 +1,47 @@
 import Image from "next/image";
-import React from "react";
-import back from "../../assets/backpattern.png";
-import next from "../../assets/next.png";
-import titleBox from "../../assets/titleBox.png";
+import { backpattern as back, next, options, titleBox } from "@/constants";
 import Dropdown from "@/components/dropdown/Dropdown";
-import options from "../../assets/options.png";
 import Link from "next/link";
 
 const Flash = () => {
-  
   return (
-    <div className=" min-h-screen pb-[200px]">
-      <Image
-        src={back}
-        alt="background pattern"
-        className="fixed top-0 left-0 w-screen h-screen object-cover"
-        style={{ zIndex: -1 }}
-      />
+    <div className=" min-h-screen pb-[200px] relative">
+      <div
+        className="fixed top-0 left-0 w-screen h-screen bg-cover bg-center"
+        style={{
+          backgroundImage: `url('${back}')`,
+          zIndex: -1,
+        }}
+      ></div>
       <div>
         <div>
           <button className="absolute md:top-[47px] md:right-[59px] md:hidden top-[30px] left-[14px]">
-            <Image src={options} alt="option button" className="w-[36px]" />
+            <Image
+              src={options}
+              width={36}
+              height={36}
+              alt="option button"
+              className="w-[36px]"
+            />
           </button>
-          <Link href="/flash2"  className="absolute md:top-[47px] md:right-[59px] top-[30px] right-[10px]">
+          <Link
+            href="/flash2"
+            className="absolute md:top-[47px] md:right-[59px] top-[30px] right-[10px]"
+          >
             <Image
               src={next}
+              height={52}
+              width={52}
               alt="next button"
               className="md:w-[52px] w-[36px]"
-              
             />
           </Link>
         </div>
         <div className="flex flex-row justify-center items-center md:pt-[81px] pt-[112px]">
           <Image
             src={titleBox}
+            width={71}
+            height={98}
             alt="title box"
             className="md:h-[98px] md:w-[71px] w-[51px] h-[71px]"
           />

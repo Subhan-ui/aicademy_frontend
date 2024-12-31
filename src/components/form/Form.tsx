@@ -1,6 +1,5 @@
-import React from "react";
 import Image from "next/image";
-import google from "../../assets/google.png";
+import { google } from "@/constants";
 
 const Signup = ({
   title,
@@ -23,8 +22,10 @@ const Signup = ({
       <button className="sm:bg-[#d9d9d9] text-black rounded-s w-full h-[60px]  2xl:mt-[94px] 2lg:mt-[83px] mt-[79px] flex flex-row justify-center items-center">
         <Image
           src={google}
+          width={78}
+          height={63}
           alt="Google Logo"
-          className="w-[78px]  h-[63px] relative 2lg:right-0 sm:right-3 "
+          className="relative 2lg:right-0 sm:right-3 "
         />
         <p className="lg:text-[1.15rem] sm:text-[14px] text-sm te lg:font-semibold font-medium relative 2lg:right-0 right-4 sm:block hidden">
           CONTINUE WITH GOOGLE

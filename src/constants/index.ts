@@ -1,0 +1,14 @@
+export const arrow = "/arrow.png";
+export const sideImg = "/sideimg.png";
+export const backgbLogin = "/backgb.png";
+export const google = '/google.png'
+export const backpattern = '/backpattern.png'
+export const btn1 = '/btn1.png'
+export const btn2 = '/btn2.png'
+export const btn3 = '/btn3.png'
+export const btn4 = '/btn4.png'
+export const flash2 = '/flash2.png'
+export const next = '/next.png'
+export const options = '/options.png'
+export const pooper = '/pooper.gif'
+export const titleBox = '/titlebox.png'

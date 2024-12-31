@@ -1,6 +1,5 @@
 import Image from "next/image";
-import React from "react";
-import pooper from "../../assets/pooper.gif";
+import { pooper } from "@/constants";
 
 const Pooper = () => {
   return (
@@ -8,6 +7,8 @@ const Pooper = () => {
       <div className="flex justify-center items-end ">
         <Image
           src={pooper}
+          width={303}
+          height={303}
           alt="party pooper for celebrations"
           className="lg:w-[303px] md:w-[250px] sm:w-[180px] w-[90px] rotate-90"
         />
@@ -15,6 +16,8 @@ const Pooper = () => {
           Congratulations
         </h1>
         <Image
+          width={303}
+          height={303}
           src={pooper}
           alt="party pooper for celebrations"
           className="lg:w-[303px] md:w-[250px] sm:w-[180px] w-[90px]"

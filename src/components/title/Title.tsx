@@ -1,12 +1,14 @@
 import Image from "next/image";
 import React from "react";
-import titleBox from "../../assets/titleBox.png";
+import { titleBox } from "@/constants";
 
 const Title = () => {
   return (
     <div className="flex flex-row justify-center items-center md:pt-[24px] pt-[64px]">
       <Image
         src={titleBox}
+        width={71}
+        height={98}
         alt="title box"
         className="md:h-[98px] md:w-[71px] w-[51px] h-[71px]"
       />
