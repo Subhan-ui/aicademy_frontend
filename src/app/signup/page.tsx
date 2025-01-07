@@ -13,10 +13,11 @@ export default function SignupPage() {
           width={613}
           height={829}
           alt="image on the signup page"
-          className="2xl:w-[613px] 2xl:h-[829px] w-screen h-full rounded-2xl "
+          className="w-full h-full rounded-2xl aspect-auto"
         />
       </div>
       <Form title="Create an Account" btn="SIGN UP" fields={<Singup />} />
     </BlurBox>
   );
 }
+// 2xl:w-[613px] 2xl:h-[829px]

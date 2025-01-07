@@ -13,10 +13,12 @@ export default function LoginPage() {
           width={613}
           height={829}
           alt="image on the signup page"
-          className="2xl:w-[613px] 2xl:h-[829px] w-full h-full rounded-2xl "
+          className="w-full h-full rounded-2xl aspect-auto"
         />
       </div>
       <Form title="Login" btn="Login" fields={<Login />} />
     </BlurBox>
   );
 }
+
+// 2xl:h-[829px] 2xl:w-[613px]

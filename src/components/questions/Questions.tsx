@@ -37,7 +37,7 @@ const Questions = () => {
   return (
     <div className="flex justify-center md:flex-row flex-col mt-[28px] items-center">
       <div className="lg:w-[687px] lg:h-[330px] md:w-[550px] md:h-[310px] w-[95%] h-[250px]  bg-white/5 rounded-[21%]  backdrop-blur-md shadow-inner shadow-[#ffffff9e] flex justify-center items-center ">
-        <p className="text-white lg:text-4xl sm:text-2xl text-lg font-bold relative sm:top-6 md:text-center text-justify px-5">
+        <p className="text-white lg:text-4xl sm:text-2xl text-lg font-bold md:text-center text-justify px-5">
           {currentQuestion}
         </p>
       </div>

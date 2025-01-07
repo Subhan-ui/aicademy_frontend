@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { btn1, btn2, flash2 as back, next, options } from "@/constants";
-import Link from "next/link";
 import Questions from "@/components/questions/Questions";
 import Title from "@/components/title/Title";
 
-const Flash = () => {
+const Flash2 = ({ change }: { change: (n: 1 | 2 | 3) => void }) => {
   return (
     <div className="min-h-screen relative">
       <div
@@ -25,8 +24,8 @@ const Flash = () => {
               className="w-[36px]"
             />
           </button>
-          <Link
-            href={"/flash3"}
+          <button
+            onClick={() => change(3)}
             className="absolute md:top-[43px] md:right-[42px] top-[30px] right-[10px]"
           >
             <Image
@@ -36,7 +35,7 @@ const Flash = () => {
               alt="next button"
               className="md:w-[52px] w-[36px]"
             />
-          </Link>
+          </button>
         </div>
         <Title />
         <p className="text-[20px] font-bold text-white text-center md:mt-[23px] mt-[15px]">
@@ -52,4 +51,4 @@ const Flash = () => {
   );
 };
 
-export default Flash;
+export default Flash2;

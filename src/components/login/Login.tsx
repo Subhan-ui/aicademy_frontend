@@ -12,16 +12,17 @@ const Login = () => {
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Email Address"
-        className="w-full 2xl:mt-[73px] 2lg:mt-[63px] mt-[53px]"
+        className="w-full mt-[9%]"
       />
       <Input
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
-        className="w-full 2xl:mt-[73px] 2lg:mt-[63px] mt-[53px]"
+        className="w-full mt-[9%]"
       />
     </>
   );
 };
 
 export default Login;
+// 2xl:mt-[73px] 2lg:mt-[63px] mt-[53px]

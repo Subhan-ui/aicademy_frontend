@@ -3,7 +3,7 @@ import Title from "@/components/title/Title";
 import ButtonPair from "@/components/buttonPair/ButtonPair";
 import Pooper from "@/components/pooper/Pooper";
 
-const Flash = () => {
+const Flash3 = ({ change }: { change: (n: 1 | 2 | 3) => void }) => {
   return (
     <div className=" min-h-screen pb-[200px] relative">
       <div
@@ -16,10 +16,10 @@ const Flash = () => {
       <div>
         <Title />
         <Pooper />
-        <ButtonPair />
+        <ButtonPair change={change} />
       </div>
     </div>
   );
 };
 
-export default Flash;
+export default Flash3;
