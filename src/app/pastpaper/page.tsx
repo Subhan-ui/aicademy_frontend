@@ -1,6 +1,5 @@
 import React from "react";
-import { flash2 as back, subjectOpt } from "@/constants";
-import Image from "next/image";
+import { flash2 as back } from "@/constants";
 import Navbar from "@/components/navbar/Navbar";
 import PastPaperScreen from "@/components/pastPaperScreen/PastPaperScreen";
 import Subjects from "@/components/subjects/Subjects";
